@@ -61,7 +61,7 @@ namespace Organizer.UI.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Organizer.UI;component/views/projectsusercontrol.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Organizer.UI;V1.0.0.0;component/views/projectsusercontrol.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\ProjectsUserControl.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

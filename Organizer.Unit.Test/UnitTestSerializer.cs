@@ -13,27 +13,27 @@ namespace Organizer.Unit.Test
         public void TestMethodSerialize()
         {
             var model = new DataModel();
-            model.Events = new List<Book>()
+            model.Books = new List<Book>()
             {
                 new Book()
                 {
                     Name = "Хлібне перемир'я", Author = "Сергій Жадан"
                 }
             };
-            model.Projects = new List<Project>()
+            model.EBooks = new List<EBook>()
             {
-                new Project()
+                new EBook()
                 {
                     Name = "Проєкт з КПЗ"
                 }
             };
-            model.Tasks = new List<Task>()
+            model.Souvenirs = new List<Souvenir>()
             {
-                new Task()
+                new Souvenir()
                 {
                     Name = "Написання тестів", Description = "Створити файл -> написати тести -> протестувати"
                 },
-                new Task()
+                new Souvenir()
                 {
                     Name = "", Description = ""
                 }

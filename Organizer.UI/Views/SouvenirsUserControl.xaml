@@ -1,0 +1,33 @@
+﻿<UserControl x:Class="Organizer.UI.Views.SouvenirsUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Organizer.UI.Views" xmlns:Converter="clr-namespace:Organizer.UI.Convertors"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.Resources>
+        <Converter:ImageConverter x:Key="my:ImageConverter" />
+    </UserControl.Resources>
+    <Grid>
+        <DataGrid Name="dataGridTasks" AutoGenerateColumns="True" VerticalAlignment="Center" HorizontalAlignment="Left" Height="434" Width="Auto" ItemsSource="{Binding Path=Souvenirs}" SelectedItem="{Binding Path=SelectedItem, Mode=TwoWay}">
+
+        </DataGrid>
+        <Border CornerRadius="20" Background="#7EC58E" HorizontalAlignment="Right" VerticalAlignment="Center">
+            <Button Command="{Binding Path=BuyCommand}" Height="32" Width="64">
+                <Button.Style>
+                    <Style TargetType="Button">
+                        <Setter Property="Background" Value="Transparent" />
+                        <Setter Property="BorderThickness" Value="0" />
+                    </Style>
+                </Button.Style>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <Image Source="../Images/shoping-cart.png" Height="24" Margin="0 0 8 0"/>
+                    <TextBlock Text="Купити" VerticalAlignment="Center"/>
+                </StackPanel>
+            </Button>
+        </Border>
+
+
+    </Grid>
+</UserControl>

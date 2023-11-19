@@ -10,16 +10,12 @@ C:\Users\ludam\source\repos\Organizer\Organizer.UI\bin\Debug\net5.0-windows\Orga
 C:\Users\ludam\source\repos\Organizer\Organizer.UI\bin\Debug\net5.0-windows\Organizer.Model.pdb
 C:\Users\ludam\source\repos\Organizer\Organizer.UI\obj\Debug\net5.0-windows\Views\BooksUserControl.g.cs
 C:\Users\ludam\source\repos\Organizer\Organizer.UI\obj\Debug\net5.0-windows\Views\MainWindow.g.cs
-C:\Users\ludam\source\repos\Organizer\Organizer.UI\obj\Debug\net5.0-windows\Views\ProjectsUserControl.g.cs
-C:\Users\ludam\source\repos\Organizer\Organizer.UI\obj\Debug\net5.0-windows\Views\TasksUserControl.g.cs
 C:\Users\ludam\source\repos\Organizer\Organizer.UI\obj\Debug\net5.0-windows\App.g.cs
 C:\Users\ludam\source\repos\Organizer\Organizer.UI\obj\Debug\net5.0-windows\GeneratedInternalTypeHelper.g.cs
 C:\Users\ludam\source\repos\Organizer\Organizer.UI\obj\Debug\net5.0-windows\Organizer.UI_MarkupCompile.cache
 C:\Users\ludam\source\repos\Organizer\Organizer.UI\obj\Debug\net5.0-windows\Organizer.UI_MarkupCompile.lref
 C:\Users\ludam\source\repos\Organizer\Organizer.UI\obj\Debug\net5.0-windows\Views\BooksUserControl.baml
 C:\Users\ludam\source\repos\Organizer\Organizer.UI\obj\Debug\net5.0-windows\Views\MainWindow.baml
-C:\Users\ludam\source\repos\Organizer\Organizer.UI\obj\Debug\net5.0-windows\Views\ProjectsUserControl.baml
-C:\Users\ludam\source\repos\Organizer\Organizer.UI\obj\Debug\net5.0-windows\Views\TasksUserControl.baml
 C:\Users\ludam\source\repos\Organizer\Organizer.UI\obj\Debug\net5.0-windows\Organizer.UI.g.resources
 C:\Users\ludam\source\repos\Organizer\Organizer.UI\obj\Debug\net5.0-windows\Organizer.UI.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\ludam\source\repos\Organizer\Organizer.UI\obj\Debug\net5.0-windows\Organizer.UI.AssemblyInfoInputs.cache
@@ -30,3 +26,8 @@ C:\Users\ludam\source\repos\Organizer\Organizer.UI\obj\Debug\net5.0-windows\Orga
 C:\Users\ludam\source\repos\Organizer\Organizer.UI\obj\Debug\net5.0-windows\ref\Organizer.UI.dll
 C:\Users\ludam\source\repos\Organizer\Organizer.UI\obj\Debug\net5.0-windows\Organizer.UI.pdb
 C:\Users\ludam\source\repos\Organizer\Organizer.UI\obj\Debug\net5.0-windows\Organizer.UI.genruntimeconfig.cache
+C:\Users\ludam\source\repos\Organizer\Organizer.UI\obj\Debug\net5.0-windows\Organizer.UI.csproj.AssemblyReference.cache
+C:\Users\ludam\source\repos\Organizer\Organizer.UI\obj\Debug\net5.0-windows\Views\EBooksUserControl.g.cs
+C:\Users\ludam\source\repos\Organizer\Organizer.UI\obj\Debug\net5.0-windows\Views\SouvenirsUserControl.g.cs
+C:\Users\ludam\source\repos\Organizer\Organizer.UI\obj\Debug\net5.0-windows\Views\EBooksUserControl.baml
+C:\Users\ludam\source\repos\Organizer\Organizer.UI\obj\Debug\net5.0-windows\Views\SouvenirsUserControl.baml

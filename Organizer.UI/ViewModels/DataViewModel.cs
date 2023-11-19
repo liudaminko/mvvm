@@ -15,9 +15,9 @@ namespace Organizer.UI.ViewModels
         public DataViewModel() 
         {
             SetControlVisibility = new Command(ControlVisibility);
-            CloseTaskCommand = new Command(CloseTask);
+            BuyCommand = new Command(BuyItem);
         }
-        private string visibleControl = "Tasks";
+        private string visibleControl = "Books";
         public string VisibleControl
         {
             get
@@ -30,17 +30,17 @@ namespace Organizer.UI.ViewModels
                 OnPropertyChanged("VisibleControl");
             }
         }
-        private TaskViewModel selectedTask;
-        public TaskViewModel SelectedTask
+        private SouvenirViewModel selectedItem;
+        public SouvenirViewModel SelectedItem
         {
             get
             {
-                return selectedTask;
+                return selectedItem;
             }
             set
             {
-                selectedTask = value;
-                OnPropertyChanged("SelectedTask");
+                selectedItem = value;
+                OnPropertyChanged("SelectedItem");
             }
         }
 
@@ -49,42 +49,42 @@ namespace Organizer.UI.ViewModels
         {
             VisibleControl = args.ToString();
         }
-        public ICommand CloseTaskCommand { get; set; }
-        public void CloseTask(object args)
+        public ICommand BuyCommand { get; set; }
+        public void BuyItem(object args)
         {
             //var task = (TaskViewModel)args;
-            SelectedTask.Status = Model.TaskStatus.Closed;
+            SelectedItem.Amount -= 1;
         }
 
-        private ObservableCollection<TaskViewModel> tasks;
-        public ObservableCollection<TaskViewModel> Tasks 
+        private ObservableCollection<SouvenirViewModel> souvenirs;
+        public ObservableCollection<SouvenirViewModel> Souvenirs 
         {
             get 
             {
-                return tasks;
+                return souvenirs;
             }
             set 
             {
-                tasks = value;
-                OnPropertyChanged("Tasks");
+                souvenirs = value;
+                OnPropertyChanged("Souvenirs");
             }
         }
-        private ObservableCollection<ProjectViewModel> projects;
-        public ObservableCollection<ProjectViewModel> Projects
+        private ObservableCollection<EBookViewModel> ebooks;
+        public ObservableCollection<EBookViewModel> EBooks
         {
             get
             {
-                return projects;
+                return ebooks;
             }
             set
             {
-                projects = value;
-                OnPropertyChanged("Projects");
+                ebooks = value;
+                OnPropertyChanged("EBooks");
             }
         }
 
-        private ObservableCollection<BooksViewModel> books;
-        public ObservableCollection<BooksViewModel> Books
+        private ObservableCollection<BookViewModel> books;
+        public ObservableCollection<BookViewModel> Books
         {
             get
             {

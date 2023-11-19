@@ -14,6 +14,7 @@
     <None Remove="Images\gift-bag.png" />
     <None Remove="Images\online-library.png" />
     <None Remove="Images\project.png" />
+    <None Remove="Images\shopping-cart.png" />
     <None Remove="Images\Status_Closed.png" />
     <None Remove="Images\Status_InProgress.png" />
     <None Remove="Images\Status_New.png" />
@@ -37,6 +38,7 @@
     <Resource Include="Images\gift-bag.png" />
     <Resource Include="Images\online-library.png" />
     <Resource Include="Images\project.png" />
+    <Resource Include="Images\shopping-cart.png" />
     <Resource Include="Images\Status_Closed.png" />
     <Resource Include="Images\Status_InProgress.png" />
     <Resource Include="Images\Status_New.png" />

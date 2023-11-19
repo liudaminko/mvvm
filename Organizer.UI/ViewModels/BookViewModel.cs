@@ -1,13 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Organizer.UI.ViewModels
 {
-    public class ProjectViewModel: ViewModelBase
+    public class BookViewModel: ViewModelBase
     {
         private string name;
         public string Name
@@ -23,31 +22,43 @@ namespace Organizer.UI.ViewModels
             }
         }
 
-        private string description;
-        public string Description
+        private string author;
+        public string Author
         {
             get
             {
-                return description;
+                return author;
             }
             set
             {
-                description = value;
-                OnPropertyChanged("Description");
+                author = value;
+                OnPropertyChanged("Author");
             }
         }
-
-        private ObservableCollection<TaskViewModel> tasks;
-        public ObservableCollection<TaskViewModel> Tasks
+        private string price;
+        public string Price
         {
             get
             {
-                return tasks;
+                return price;
             }
             set
             {
-                tasks = value;
-                OnPropertyChanged("Tasks");
+                price = value;
+                OnPropertyChanged("Price");
+            }
+        }
+        private string amount;
+        public string Amount
+        {
+            get
+            {
+                return amount;
+            }
+            set
+            {
+                amount = value;
+                OnPropertyChanged("Amount");
             }
         }
     }

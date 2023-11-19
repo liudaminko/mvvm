@@ -10,25 +10,25 @@ namespace Organizer.Model
     public class DataModel
     {
         [DataMember]
-        public IEnumerable<Task> Tasks { get; set; }
+        public IEnumerable<Souvenir> Souvenirs { get; set; }
         [DataMember]
-        public IEnumerable<Project> Projects { get; set; }
+        public IEnumerable<EBook> EBooks { get; set; }
         [DataMember]
-        public IEnumerable<Book> Events { get; set; }
+        public IEnumerable<Book> Books { get; set; }
         public DataModel()
         {
-            Tasks = new List<Task>()
+            Souvenirs = new List<Souvenir>()
             {
-                new Task()
+                new Souvenir()
                 {
-                    Name = "Enter new task here", Description = "Enter some description", Status = TaskStatus.New
+                    Name = "Enter new task here", Description = "Enter some description", Amount = 100
                 }
             };
-            Projects = new List<Project>()
+            EBooks = new List<EBook>()
             {
-                new Project()
+                new EBook()
             };
-            Events = new List<Book>()
+            Books = new List<Book>()
             {
                 new Book()
             };

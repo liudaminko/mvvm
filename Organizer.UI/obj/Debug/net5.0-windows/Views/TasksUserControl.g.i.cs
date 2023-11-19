@@ -62,7 +62,7 @@ namespace Organizer.UI.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Organizer.UI;component/views/tasksusercontrol.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Organizer.UI;V1.0.0.0;component/views/tasksusercontrol.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\TasksUserControl.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

@@ -44,9 +44,9 @@
   <ItemGroup>
     <Compile Include="DataModel.cs" />
     <Compile Include="Book.cs" />
-    <Compile Include="Project.cs" />
+    <Compile Include="EBook.cs" />
     <Compile Include="Serialization\DataSerializer.cs" />
-    <Compile Include="Task.cs" />
+    <Compile Include="Souvenir.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Organizer.UI.ViewModels
 {
-    public class TaskViewModel: ViewModelBase
+    public class EBookViewModel: ViewModelBase
     {
         private string name;
         public string Name
@@ -33,20 +34,6 @@ namespace Organizer.UI.ViewModels
             {
                 description = value;
                 OnPropertyChanged("Description");
-            }
-        }
-
-        private Model.TaskStatus status;
-        public Model.TaskStatus Status
-        {
-            get
-            {
-                return status;
-            }
-            set
-            {
-                status = value;
-                OnPropertyChanged("Status");
             }
         }
     }

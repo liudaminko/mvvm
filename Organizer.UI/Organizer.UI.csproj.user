@@ -10,10 +10,10 @@
     <Compile Update="Views\BooksUserControl.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\ProjectsUserControl.xaml.cs">
+    <Compile Update="Views\EBooksUserControl.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\TasksUserControl.xaml.cs">
+    <Compile Update="Views\SouvenirsUserControl.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -24,10 +24,10 @@
     <Page Update="Views\MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\ProjectsUserControl.xaml">
+    <Page Update="Views\EBooksUserControl.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\TasksUserControl.xaml">
+    <Page Update="Views\SouvenirsUserControl.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET5_0;NETCOREAPP
 C:\Users\ludam\source\repos\Organizer\Organizer.UI\App.xaml
-4-1971710681
+4634833263
 
-151583578121
+15-254940601
 195-1733520289
-Views\BooksUserControl.xaml;Views\MainWindow.xaml;Views\ProjectsUserControl.xaml;Views\TasksUserControl.xaml;
+Views\BooksUserControl.xaml;Views\EBooksUserControl.xaml;Views\MainWindow.xaml;Views\SouvenirsUserControl.xaml;
 
 False
 

@@ -18,9 +18,9 @@ namespace Organizer.UI.Views
     /// <summary>
     /// Interaction logic for ProjectsUserControl.xaml
     /// </summary>
-    public partial class ProjectsUserControl : UserControl
+    public partial class EBooksUserControl : UserControl
     {
-        public ProjectsUserControl()
+        public EBooksUserControl()
         {
             InitializeComponent();
         }

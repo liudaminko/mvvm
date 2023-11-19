@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Organizer.UI.ViewModels
 {
-    public class BooksViewModel: ViewModelBase
+    public class SouvenirViewModel: ViewModelBase
     {
         private string name;
         public string Name
@@ -22,34 +22,22 @@ namespace Organizer.UI.ViewModels
             }
         }
 
-        private string author;
-        public string Author
+        private string description;
+        public string Description
         {
             get
             {
-                return author;
+                return description;
             }
             set
             {
-                author = value;
-                OnPropertyChanged("Author");
+                description = value;
+                OnPropertyChanged("Description");
             }
         }
-        private string price;
-        public string Price
-        {
-            get
-            {
-                return price;
-            }
-            set
-            {
-                price = value;
-                OnPropertyChanged("Price");
-            }
-        }
-        private string amount;
-        public string Amount
+
+        private int amount;
+        public int Amount
         {
             get
             {

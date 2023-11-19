@@ -19,17 +19,11 @@ namespace Organizer.UI.Views
     /// <summary>
     /// Interaction logic for TasksUserControl.xaml
     /// </summary>
-    public partial class TasksUserControl : UserControl
+    public partial class SouvenirsUserControl : UserControl
     {
-        public TasksUserControl()
+        public SouvenirsUserControl()
         {
             InitializeComponent();
         }
-        /*
-        private void buttonCloseTask_Click(object sender, RoutedEventArgs e)
-        {
-            var task = (TaskViewModel)dataGridTasks.SelectedItem;
-            task.Status = Model.TaskStatus.Closed;
-        }*/
     }
 }

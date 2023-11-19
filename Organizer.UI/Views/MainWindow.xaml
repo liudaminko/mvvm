@@ -15,7 +15,7 @@
             <ColumnDefinition Width="*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <StackPanel Grid.Column="0" Background="#f5f5f5">
-            <Button Padding="16" Command="{Binding SetControlVisibility}" CommandParameter="Events">
+            <Button Padding="16" Command="{Binding SetControlVisibility}" CommandParameter="Books">
                 <Button.Style>
                     <Style TargetType="Button">
                         <Setter Property="Background" Value="#f5f5f5" />
@@ -28,7 +28,7 @@
                     <Image Source="../Images/down-arrow.png" Height="24" Margin="16 0 0 0"/>
                 </StackPanel>
             </Button>
-            <Button Padding="16" Command="{Binding SetControlVisibility}" CommandParameter="Projects">
+            <Button Padding="16" Command="{Binding SetControlVisibility}" CommandParameter="EBooks">
                 <Button.Style>
                     <Style TargetType="Button">
                         <Setter Property="Background" Value="#f5f5f5" />
@@ -41,7 +41,7 @@
                     <Image Source="../Images/down-arrow.png" Height="24" Margin="16 0 0 0"/>
                 </StackPanel>
             </Button>
-            <Button Padding="16" Command="{Binding SetControlVisibility}" CommandParameter="Tasks">
+            <Button Padding="16" Command="{Binding SetControlVisibility}" CommandParameter="Souvenirs">
                 <Button.Style>
                     <Style TargetType="Button">
                         <Setter Property="Background" Value="#f5f5f5" />
@@ -55,10 +55,10 @@
                 </StackPanel>
             </Button>
         </StackPanel>
-        <StackPanel Grid.Column="1" Background="#ffffff">
-            <Views:BooksUserControl Visibility="{Binding Path=VisibleControl, Converter={StaticResource my:ControlVisibility}, ConverterParameter=Events}"/>
-            <Views:ProjectsUserControl Visibility="{Binding Path=VisibleControl, Converter={StaticResource my:ControlVisibility}, ConverterParameter=Projects}"/>
-            <Views:TasksUserControl Visibility="{Binding Path=VisibleControl, Converter={StaticResource my:ControlVisibility}, ConverterParameter=Tasks}"/>
+        <StackPanel Grid.Column="1" Background="#ffffff" Margin="30 15 0 15">
+            <Views:BooksUserControl Visibility="{Binding Path=VisibleControl, Converter={StaticResource my:ControlVisibility}, ConverterParameter=Books}"/>
+            <Views:EBooksUserControl Visibility="{Binding Path=VisibleControl, Converter={StaticResource my:ControlVisibility}, ConverterParameter=EBooks}"/>
+            <Views:SouvenirsUserControl Visibility="{Binding Path=VisibleControl, Converter={StaticResource my:ControlVisibility}, ConverterParameter=Souvenirs}"/>
         </StackPanel>
 
     </Grid>

@@ -12,9 +12,11 @@ namespace Organizer.UI.Convertors
     public class ImageConverter : IValueConverter
     {
         //caching
+        
         Dictionary<Model.TaskStatus, BitmapImage> cache = new Dictionary<Model.TaskStatus, BitmapImage>();
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
+            
             var status = (Model.TaskStatus)value; 
             if (!cache.ContainsKey(status))
             {

@@ -20,14 +20,14 @@ namespace Organizer.UI.Base
             CreateMap<DataModel, DataViewModel>();
             CreateMap<DataViewModel, DataModel>();
 
-            CreateMap<Project, ProjectViewModel>();
-            CreateMap<ProjectViewModel, Project>();
+            CreateMap<EBook, EBookViewModel>();
+            CreateMap<EBookViewModel, EBook>();
 
-            CreateMap<Model.Task, TaskViewModel>();
-            CreateMap<TaskViewModel, Model.Task>();
+            CreateMap<Model.Souvenir, SouvenirViewModel>();
+            CreateMap<SouvenirViewModel, Model.Souvenir>();
 
-            CreateMap<Book, BooksViewModel>();
-            CreateMap<BooksViewModel, Book>();
+            CreateMap<Book, BookViewModel>();
+            CreateMap<BookViewModel, Book>();
 
         }
     }
