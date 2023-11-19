@@ -1,0 +1,5 @@
+C:\Users\ludam\source\repos\Organizer\Organizer.Model\bin\Debug\Organizer.Model.dll
+C:\Users\ludam\source\repos\Organizer\Organizer.Model\bin\Debug\Organizer.Model.pdb
+C:\Users\ludam\source\repos\Organizer\Organizer.Model\obj\Debug\Organizer.Model.csproj.CoreCompileInputs.cache
+C:\Users\ludam\source\repos\Organizer\Organizer.Model\obj\Debug\Organizer.Model.dll
+C:\Users\ludam\source\repos\Organizer\Organizer.Model\obj\Debug\Organizer.Model.pdb
