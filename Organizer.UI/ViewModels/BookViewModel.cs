@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Organizer.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Organizer.UI.ViewModels
 {
-    public class BookViewModel: ViewModelBase
+    public class BookViewModel: ViewModelBase, ISelectedItem
     {
         private string name;
         public string Name
@@ -48,8 +49,34 @@ namespace Organizer.UI.ViewModels
                 OnPropertyChanged("Price");
             }
         }
-        private string amount;
-        public string Amount
+        private string pages;
+        public string Pages
+        {
+            get
+            {
+                return pages;
+            }
+            set
+            {
+                pages = value;
+                OnPropertyChanged("Pages");
+            }
+        }
+        private ItemStatus status = ItemStatus.NotLiked;
+        public ItemStatus Status
+        {
+            get { return status; }
+            set
+            {
+                if (status != value)
+                {
+                    status = value;
+                    OnPropertyChanged(nameof(Status));
+                }
+            }
+        }
+        private int amount;
+        public int Amount
         {
             get
             {

@@ -17,7 +17,9 @@
     <None Remove="Images\shopping-cart.png" />
     <None Remove="Images\Status_Closed.png" />
     <None Remove="Images\Status_InProgress.png" />
+    <None Remove="Images\Status_Liked.png" />
     <None Remove="Images\Status_New.png" />
+    <None Remove="Images\Status_NotLiked.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -32,15 +34,11 @@
 
   <ItemGroup>
     <Resource Include="Images\book.png" />
-    <Resource Include="Images\calendar.png" />
-    <Resource Include="Images\clipboard.png" />
     <Resource Include="Images\down-arrow.png" />
     <Resource Include="Images\gift-bag.png" />
     <Resource Include="Images\online-library.png" />
-    <Resource Include="Images\project.png" />
     <Resource Include="Images\shopping-cart.png" />
-    <Resource Include="Images\Status_Closed.png" />
-    <Resource Include="Images\Status_InProgress.png" />
-    <Resource Include="Images\Status_New.png" />
+    <Resource Include="Images\Status_Liked.png" />
+    <Resource Include="Images\Status_NotLiked.png" />
   </ItemGroup>
 </Project>

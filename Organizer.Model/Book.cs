@@ -16,8 +16,22 @@ namespace Organizer.Model
         [DataMember]
         public string Author { get; set; }
         [DataMember]
+        public int Pages { get; set; }
+        [DataMember]
         public int Price { get; set; }
+
         [DataMember]
         public int Amount { get; set; }
+        [DataMember]
+        public ItemStatus Status { get; set; }
+    }
+
+    [DataContract]
+    public enum ItemStatus
+    {
+        [EnumMember]
+        Liked,
+        [EnumMember]
+        NotLiked
     }
 }

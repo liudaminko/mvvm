@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Organizer.Model;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Organizer.UI.ViewModels
 {
-    public class EBookViewModel: ViewModelBase
+    public class EBookViewModel: ViewModelBase, ISelectedItem
     {
         private string name;
         public string Name
@@ -23,17 +24,69 @@ namespace Organizer.UI.ViewModels
             }
         }
 
-        private string description;
-        public string Description
+        private string author;
+        public string Author
         {
             get
             {
-                return description;
+                return author;
             }
             set
             {
-                description = value;
-                OnPropertyChanged("Description");
+                author = value;
+                OnPropertyChanged("Author");
+            }
+        }
+        private string format;
+        public string Format
+        {
+            get
+            {
+                return format;
+            }
+            set
+            {
+                format = value;
+                OnPropertyChanged("Format");
+            }
+        }
+        private int price;
+        public int Price
+        {
+            get
+            {
+                return price;
+            }
+            set
+            {
+                price = value;
+                OnPropertyChanged("Price");
+            }
+        }
+        private int amount;
+        public int Amount
+        {
+            get { return amount; }
+            set
+            {
+                if (amount != value)
+                {
+                    amount = value;
+                    OnPropertyChanged(nameof(Amount));
+                }
+            }
+        }
+        private ItemStatus status = ItemStatus.NotLiked;
+        public ItemStatus Status
+        {
+            get { return status; }
+            set
+            {
+                if (status != value)
+                {
+                    status = value;
+                    OnPropertyChanged(nameof(Status));
+                }
             }
         }
     }

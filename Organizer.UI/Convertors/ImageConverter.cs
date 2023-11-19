@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Organizer.Model;
+using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
@@ -13,11 +14,11 @@ namespace Organizer.UI.Convertors
     {
         //caching
         
-        Dictionary<Model.TaskStatus, BitmapImage> cache = new Dictionary<Model.TaskStatus, BitmapImage>();
+        Dictionary<ItemStatus, BitmapImage> cache = new Dictionary<ItemStatus, BitmapImage>();
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
             
-            var status = (Model.TaskStatus)value; 
+            var status = (ItemStatus)value; 
             if (!cache.ContainsKey(status))
             {
                 var uri = new Uri(string.Format(@"../Images/Status_{0}.png", status), UriKind.Relative);

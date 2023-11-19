@@ -21,7 +21,7 @@ namespace Organizer.Model
             {
                 new Souvenir()
                 {
-                    Name = "Enter new task here", Description = "Enter some description", Amount = 100
+                    Name = "Enter new task here", Price = 90, Amount = 100
                 }
             };
             EBooks = new List<EBook>()

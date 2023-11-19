@@ -13,6 +13,15 @@ namespace Organizer.Model
         [DataMember]
         public string Name { get; set; }
         [DataMember]
-        public string Description { get; set; }
+        public string Author { get; set; }
+        [DataMember]
+        public string Format { get; set; }
+        [DataMember]
+        public int Price { get; set; }
+
+        [DataMember]
+        public int Amount { get; set; }
+        [DataMember]
+        public ItemStatus status { get; set; }
     }
 }

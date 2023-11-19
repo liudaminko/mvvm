@@ -3,18 +3,47 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:Organizer.UI.Views" xmlns:Converter="clr-namespace:Organizer.UI.Convertors"
+             xmlns:local="clr-namespace:Organizer.UI.Views" xmlns:Converter="clr-namespace:Organizer.UI.Convertors" xmlns:viewmodels="clr-namespace:Organizer.UI.ViewModels" d:DataContext="{d:DesignInstance Type=viewmodels:DataViewModel}"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <UserControl.Resources>
         <Converter:ImageConverter x:Key="my:ImageConverter" />
     </UserControl.Resources>
     <Grid>
-        <DataGrid Name="dataGridTasks" AutoGenerateColumns="True" VerticalAlignment="Center" HorizontalAlignment="Left" Height="434" Width="Auto" ItemsSource="{Binding Path=Souvenirs}" SelectedItem="{Binding Path=SelectedItem, Mode=TwoWay}">
+        <DataGrid Name="dataGridTasks" AutoGenerateColumns="False" VerticalAlignment="Center" HorizontalAlignment="Left" Height="300" Width="Auto" ItemsSource="{Binding Path=Souvenirs}" SelectedItem="{Binding Path=SelectedItem, Mode=TwoWay}">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Name" Binding="{Binding Name, Mode=TwoWay}"/>
+                <DataGridTextColumn Header="Price" Binding="{Binding Price, Mode=TwoWay}"/>
+                <DataGridTextColumn Header="Amount" Binding="{Binding Amount, Mode=TwoWay}"/>
+                <DataGridTemplateColumn Header="Favorite">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Image Width="20" Height="20" Source="{Binding Status, Converter={StaticResource my:ImageConverter}}"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+            <DataGrid.Resources>
+                <!-- Style for the DataGridRow -->
+                <Style TargetType="DataGridRow">
+                    <Setter Property="Background" Value="#E6E6E6" />
+                    <Setter Property="Foreground" Value="#333333" />
+                </Style>
 
+
+                <!-- Style for the DataGridColumnHeaders -->
+                <Style TargetType="DataGridColumnHeader">
+                    <Setter Property="Background" Value="#7EC58E" />
+                    <Setter Property="Foreground" Value="#1a1a1a" />
+                    <Setter Property="BorderBrush" Value="#1a1a1a" />
+                    <Setter Property="BorderThickness" Value="0,0,1,1" />
+                    <Setter Property="Padding" Value="8" />
+                </Style>
+            </DataGrid.Resources>
         </DataGrid>
-        <Border CornerRadius="20" Background="#7EC58E" HorizontalAlignment="Right" VerticalAlignment="Center">
-            <Button Command="{Binding Path=BuyCommand}" Height="32" Width="64">
+        
+        <Border CornerRadius="20" Background="#7EC58E" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0 0 30 0">
+            <Button Command="{Binding Path=LikeCommand}" Height="40" Width="90">
                 <Button.Style>
                     <Style TargetType="Button">
                         <Setter Property="Background" Value="Transparent" />
@@ -22,7 +51,21 @@
                     </Style>
                 </Button.Style>
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                    <Image Source="../Images/shoping-cart.png" Height="24" Margin="0 0 8 0"/>
+                    <Image Source="../Images/Status_NotLiked.png" Height="18" Margin="0 0 8 0"/>
+                    <TextBlock Text="Обране" VerticalAlignment="Center"/>
+                </StackPanel>
+            </Button>
+        </Border>
+        <Border CornerRadius="20" Background="#7EC58E" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0 0 30 80">
+            <Button Command="{Binding Path=BuyCommand}" Height="40" Width="90">
+                <Button.Style>
+                    <Style TargetType="Button">
+                        <Setter Property="Background" Value="Transparent" />
+                        <Setter Property="BorderThickness" Value="0" />
+                    </Style>
+                </Button.Style>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <Image Source="../Images/shopping-cart.png" Height="18" Margin="0 0 8 0"/>
                     <TextBlock Text="Купити" VerticalAlignment="Center"/>
                 </StackPanel>
             </Button>

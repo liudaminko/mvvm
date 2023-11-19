@@ -16,6 +16,7 @@ namespace Organizer.UI.ViewModels
         {
             SetControlVisibility = new Command(ControlVisibility);
             BuyCommand = new Command(BuyItem);
+            LikeCommand = new Command(LikeItem);
         }
         private string visibleControl = "Books";
         public string VisibleControl
@@ -30,17 +31,14 @@ namespace Organizer.UI.ViewModels
                 OnPropertyChanged("VisibleControl");
             }
         }
-        private SouvenirViewModel selectedItem;
-        public SouvenirViewModel SelectedItem
+        private ISelectedItem selectedItem;
+        public ISelectedItem SelectedItem
         {
-            get
-            {
-                return selectedItem;
-            }
+            get { return selectedItem; }
             set
             {
                 selectedItem = value;
-                OnPropertyChanged("SelectedItem");
+                OnPropertyChanged(nameof(SelectedItem));
             }
         }
 
@@ -52,8 +50,16 @@ namespace Organizer.UI.ViewModels
         public ICommand BuyCommand { get; set; }
         public void BuyItem(object args)
         {
-            //var task = (TaskViewModel)args;
-            SelectedItem.Amount -= 1;
+            if (SelectedItem.Amount >=1)
+                SelectedItem.Amount -= 1;
+        }
+        public ICommand LikeCommand { get; set; }
+        public void LikeItem(object args)
+        {
+            if (SelectedItem.Status == ItemStatus.Liked)
+                SelectedItem.Status = ItemStatus.NotLiked;
+            else
+                SelectedItem.Status = ItemStatus.Liked;
         }
 
         private ObservableCollection<SouvenirViewModel> souvenirs;

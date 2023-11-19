@@ -14,21 +14,11 @@ namespace Organizer.Model
         [DataMember]
         public string Name { get; set; }
         [DataMember]
-        public string Description { get; set; }
+        public int Price { get; set; }
         [DataMember]
         public int Amount { get; set; }
+        [DataMember]
+        public ItemStatus status { get; set; }
 
-        
-    }
-    
-    [DataContract]
-    public enum TaskStatus
-    {
-        [EnumMember]
-        New,
-        [EnumMember]
-        InProgress,
-        [EnumMember]
-        Closed
-    }
+    } 
 }
