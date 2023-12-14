@@ -8,7 +8,12 @@
       "restore": {
         "projectUniqueName": "C:\\Users\\ludam\\source\\repos\\Organizer\\Organizer.Model\\Organizer.Model.csproj",
         "projectName": "Organizer.Model",
-        "projectPath": "C:\\Users\\ludam\\source\\repos\\Organizer\\Organizer.Model\\Organizer.Model.csproj"
+        "projectPath": "C:\\Users\\ludam\\source\\repos\\Organizer\\Organizer.Model\\Organizer.Model.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
       },
       "frameworks": {
         "net472": {}
@@ -32,7 +37,7 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net5.0-windows7.0"
+          "net5.0-windows"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -63,7 +68,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -75,7 +81,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

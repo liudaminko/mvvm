@@ -3,7 +3,6 @@ C:\Users\ludam\source\repos\Organizer\Organizer.UI\bin\Debug\net5.0-windows\Orga
 C:\Users\ludam\source\repos\Organizer\Organizer.UI\bin\Debug\net5.0-windows\Organizer.UI.runtimeconfig.json
 C:\Users\ludam\source\repos\Organizer\Organizer.UI\bin\Debug\net5.0-windows\Organizer.UI.runtimeconfig.dev.json
 C:\Users\ludam\source\repos\Organizer\Organizer.UI\bin\Debug\net5.0-windows\Organizer.UI.dll
-C:\Users\ludam\source\repos\Organizer\Organizer.UI\bin\Debug\net5.0-windows\ref\Organizer.UI.dll
 C:\Users\ludam\source\repos\Organizer\Organizer.UI\bin\Debug\net5.0-windows\Organizer.UI.pdb
 C:\Users\ludam\source\repos\Organizer\Organizer.UI\bin\Debug\net5.0-windows\AutoMapper.dll
 C:\Users\ludam\source\repos\Organizer\Organizer.UI\bin\Debug\net5.0-windows\Organizer.Model.dll
@@ -31,3 +30,5 @@ C:\Users\ludam\source\repos\Organizer\Organizer.UI\obj\Debug\net5.0-windows\View
 C:\Users\ludam\source\repos\Organizer\Organizer.UI\obj\Debug\net5.0-windows\Views\SouvenirsUserControl.g.cs
 C:\Users\ludam\source\repos\Organizer\Organizer.UI\obj\Debug\net5.0-windows\Views\EBooksUserControl.baml
 C:\Users\ludam\source\repos\Organizer\Organizer.UI\obj\Debug\net5.0-windows\Views\SouvenirsUserControl.baml
+C:\Users\ludam\source\repos\Organizer\Organizer.UI\obj\Debug\net5.0-windows\Organizer.UI.sourcelink.json
+C:\Users\ludam\source\repos\Organizer\Organizer.UI\obj\Debug\net5.0-windows\refint\Organizer.UI.dll
